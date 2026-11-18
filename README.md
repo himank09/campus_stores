@@ -208,15 +208,3 @@ A browser-based test harness was used during development to check the core workf
 The updated app was also opened manually in a browser during the work sample. The login gate, role display, navigation, handover, loan register and desk book rendered. A damaged-return action was manually exercised and the UI reported the loan closed and the asset marked unavailable for repair.
 
 **Verification caveat:** the automated harness used the app's expected DOM hooks rather than the complete original `index.html`. The browser test harness therefore does not replace a full end-to-end regression test against the exact submitted repository. Good and Missing return outcomes, CSV download, and the full assignment path should be rechecked in the target browser before treating them as fully verified.
-
-## Submission checklist
-
-1. Fork [Campus Stores](https://github.com/virinchi-healthcare/campus-stores/fork) into your GitHub account.
-2. Commit and push the completed work to your public fork.
-3. Review the final README and ensure the repository contains the exact version you want reviewed.
-4. In the fork, open **Commits**, select the final commit and copy its URL. It should look like `https://github.com/YOUR-USERNAME/campus-stores/commit/COMMIT-SHA`.
-5. Submit the required roll number, email ID and final commit URL through the [candidate submission form](https://docs.google.com/forms/d/e/1FAIpQLScvzoh1R4WS-SkiwAVBQbMvniieJYSoOEfLMyVo5CyjOvYUgQ/viewform). Enter the roll number and email ID in the form only.
-
----
-
-*Campus Stores is a fictional work-sample prototype. All names, requests, assets and activity in the sample are illustrative.*
