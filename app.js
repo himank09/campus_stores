@@ -493,8 +493,10 @@
     const num = Math.max(0, ...s.loans.map((loan) => loan.num)) + 1;
     const newLoan = { num, req, asset, who, due, back: false };
     s.loans.push(newLoan);
-    addActivity(newLoan, "Equipment issued", "Counter staff",
+    addActivity(newLoan, "Equipment issued", session.name,
       `${asset} issued to ${who} under ${req}.`);
+    addActivity(newLoan, "Equipment issued", session.name,
+  `    ${asset} issued to ${who} under ${req}.`);
     s.editing = false;
     commit(`Issued ${asset} to ${who} on slip L-${num}.`);
   });
