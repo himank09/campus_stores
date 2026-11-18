@@ -23,7 +23,7 @@ The original desk structure is retained: Requests, Inventory, Loan register and 
 ### 1. Physical-unit loan tracking and issue controls
 
 - Each issued physical asset receives its own loan slip.
-- Issue options are constrained by the selected approved request.
+- Available physical units are displayed in the issue form, with submission-time validation against the selected request's approved equipment types and quantities.
 - The app enforces the approved item types and quantities for that request.
 - Assets marked as under repair are excluded from issue options.
 - Availability is derived from outstanding loans and asset state, rather than from a staff member manually guessing whether an item is free.
